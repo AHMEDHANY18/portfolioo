@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="shortcut icon" href="contact icon.png">
+    <link rel="stylesheet" href="main.css">
+<style>
+    :root {
+        --bg-color: rgb(13, 17, 22);
+        --bg-white: white;
+        --overlay-bg: rgba(15, 116, 143, 60%);
+        --section-padding: 100px;
+        --color-white: white;
+        --box-hover: gray;
+        --border-white: white;
+        --job-title-color: #660c7c;
+        --work-btn: #660c7c;
+        --cv-btn: rgb(182 115 248);
+        --Js-word-bg-color: rebeccapurple;
+        --portfolio-box-bg: rgb(22 27 34/0.6);
+        --portfolio-button-color: white;
+        --portfolio-box-span-bg: rgba(48, 48, 219, 0.5);
+      }
+
+    .contact h2{
+        margin-bottom: 180px;
+
+        }
+        .contact form{
+          max-width: 700px;
+          margin: 8px auto;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .contact form .input-box{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+
+
+        .contact form .input-box input,.contact form textarea{
+          width: 100%;
+          padding: 8px;
+          font-size: 1.6rem;
+          color: var(--text);
+          background-color: var(--bg-color);
+          border-radius:5px;
+          margin:  6px auto;
+
+        }
+
+        .contact form .input-box input{
+          width: 49%;
+        }
+        .contact form .btn {
+            background: linear-gradient(to right top, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+            font-size: 25px;
+            height: 100%;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact form .btn:hover {
+            font-size: 30px;
+            background-color: #46eefa;
+        transition: 0.5s;
+        }
+        .text{
+            color: var(--text);
+            position: absolute;
+            right: 44%;
+            top: 20%;
+            font-size: 30px;
+            padding: 5px;
+
+
+        }
+        .text span{
+            color:var(--span);
+            font-size: 35px;
+
+        }
+
+
+</style>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="top.png" alt=""></button>
+
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <ul class="nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">skills</a></li></li>
+                    <li><a href="index.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="gallary.html">GALLARY</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="toggle">
+                    <img id="icon" class="icon" src="sun.png" alt="">
+                </div>
+                <div class="dropdown">
+                    <div class="button-box">
+                        <a class="Social">Social Media</a>
+                        <i class="fa fa-arrow-down"></i>
+
+                        <ul class="dropdown-box">
+                            <a href="https://www.facebook.com/profile.php?id=100038113022992" class="box" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                                <h3>Follow on Facebook</h3>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ahmed-h-4562a11ba/" class="box" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <h3>Follow on LinkedIn</h3>
+                            </a>
+                            <a href="https://github.com/AHMEDHANY18" class="box" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                <h3>Follow on Github</h3>
+                            </a>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <h2 class="text">Contact <span>Me!</span></h2>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">. <span>.</span></h2>
+        <form action="#" method="post">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="full-name">
+                <input type="email" placeholder="Email Address" name="email">
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Mobile Number" name="mobile-number">
+                <input type="text" placeholder="Email Subject" name="email-subject">
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <script src="main.js"></script>
+
+</body>
+</html>

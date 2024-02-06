@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary</title>
+    <link rel="shortcut icon" href="gallary icon.png">
+
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url(https://fonts.bunny.net/css?family=amita:700);
+
+        body {
+
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: var(--welcom);
+            font-family: Amita;
+            margin: 20px auto;
+            width: 450px;
+            font-size: 3rem;
+            text-align: center;
+            border-bottom: 10px double var(--job-title-color);
+        }
+
+        .gallary img {
+            width: 450px;
+            height: 300px;
+            margin: 10px;
+            border: 10px solid var(--border);
+            transition-duration: 1s;
+        }
+
+        .gallary img:hover {
+            border: 5px solid #fff;
+            transform: scale(1.1);
+        }
+
+        .gallary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 30%;
+        }
+        .golden{
+            position: absolute;
+            right: 30%;
+            top: 10%;
+            width: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="top.png" alt=""></button>
+
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <ul class="nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">skills</a></li></li>
+                    <li><a href="index.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#">GALLARY</a></li>
+
+                </ul>
+            </div>
+            <div class="content">
+                <div class="toggle">
+                    <img id="icon" class="icon" src="sun.png" alt="">
+
+
+                </div>
+                <div class="dropdown">
+                    <div class="button-box">
+                        <a class="Social">Social Media</a>
+                        <i class="fa fa-arrow-down"></i>
+
+                        <ul class="dropdown-box">
+                            <a href="https://www.facebook.com/profile.php?id=100038113022992" class="box" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                                <h3>Follow on Facebook</h3>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ahmed-h-4562a11ba/" class="box" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <h3>Follow on LinkedIn</h3>
+                            </a>
+                            <a href="https://github.com/AHMEDHANY18" class="box" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                <h3>Follow on Github</h3>
+                            </a>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <h1 class="golden"> Welcom to My Golden World</h1>
+    <div class="gallary">
+        <img src="1.jpg" alt="">
+        <img src="3.jpg" alt="">
+        <img src="9.jpg" alt="">
+        <img src="2.jpg" alt="">
+        <img src="5.jpg" alt="">
+        <img src="6.jpg" alt="">
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
